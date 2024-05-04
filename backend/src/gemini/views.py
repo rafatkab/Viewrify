@@ -35,7 +35,6 @@ def yt_transcript(video_url, output_file):
     return JsonResponse(transcript.text)
 
 
-
 def gemini_nlp(request):
     if request.method == 'POST' and 'text' in request.POST:
         text = request.POST['text']
