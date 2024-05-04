@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from gemini.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/hello', my_json_view, name="my_json_view"),
 ]
