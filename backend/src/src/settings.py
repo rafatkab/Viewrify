@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5ju)&ap0y5k!(0qz5ay#$q3(seokt!lo&=kjqq6^33ed58je5b'
+SECRET_KEY = 'django-insecure-lyxebg$_a-zjum!!4ute=i_zm9+j_6qq8(e5$bx*ah59=f0nf1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'demo',
-    'corsheaders'
+     'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +50,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
 ]
 
 ROOT_URLCONF = 'src.urls'
@@ -123,9 +126,5 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
-
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
