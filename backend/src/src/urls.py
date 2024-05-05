@@ -21,4 +21,5 @@ from gemini.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/hello', my_json_view, name="my_json_view"),
+    path('api/<str:video_url>', yt_transcript, name="yt_transcript"),
 ]

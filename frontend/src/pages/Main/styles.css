@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=montserrat:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;700&family=Source+Sans+3&display=swap");
+
+:root {
+  --primary-color: rgb(221, 146, 6);
+  --third-color: rgb(41, 34, 34);
+  --secondary-color: rgb(17, 24, 39);
+  --background-color: rgb(255, 254, 248);
+}
+
+body {
+  transition: background-color 0.5s ease;
+  color: var(--secondary-color);
+  background-color: #fffef8;
+  font-family: Kufam;
+}
+
+h3 {
+  color: var(--third-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 6em;
+  padding-top: 1.5em;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.searchcontainer {
+  margin-top: -60px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  border: solid;
+  border-radius: 1.5em;
+  border-color: var(--primary-color);
+}
+
+.search {
+  border: none;
+  padding: 1em;
+  width: 400px;
+  cursor: text;
+  border-radius: 2em;
+  cursor: none;
+  outline: none;
+}
+
+.microphone {
+  padding: 3px;
+  padding-right: 5px;
+  border: solid 3px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  margin-left: 27px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.mic-button {
+  border: none;
+  cursor: grab;
+  background-color: var(--primary-color);
+}
+
+.hero {
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
